@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "angular-chosen.js",
   "dependencies": {
-    "chosen": "git@github.com:harvesthq/bower-chosen.git",
+    "chosen": "git@github.com:harvesthq/bower-chosen.git#012d7d2776f3089efeac537c4e6415da13888a0a",
     "angular": ">=1.3.0"
   }
 }
