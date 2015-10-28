@@ -74,7 +74,8 @@
         max_selected_options: maxSelection,
         disable_search_threshold: searchThreshold,
         search_contains: true,
-        allow_single_deselect: allowSingleDeselect
+        allow_single_deselect: allowSingleDeselect,
+        include_group_label_in_selected: true
       });
 
       iElm.on('change', function () {
@@ -106,7 +107,9 @@
       name: 'chosen',
       scope: scope,
       restrict: 'A',
-      link: linker
+      link: {
+        post: linker
+      }
     };
   }
   AngularChosen.directive('chosen', ['$timeout', chosen]);
