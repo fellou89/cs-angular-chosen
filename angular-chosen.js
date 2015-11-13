@@ -68,6 +68,7 @@
       }
 
       var allowSingleDeselect = iElm.attr('allow-single-deselect') !== undefined ? true : false;
+      var includeGroupLabel = iElm.attr('include-group-label') !== undefined ? true : false;
 
       iElm.chosen({
         width: '100%',
@@ -75,7 +76,7 @@
         disable_search_threshold: searchThreshold,
         search_contains: true,
         allow_single_deselect: allowSingleDeselect,
-        include_group_label_in_selected: true
+        include_group_label_in_selected: includeGroupLabel
       });
 
       iElm.on('change', function () {
